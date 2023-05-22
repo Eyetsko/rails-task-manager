@@ -1,0 +1,9 @@
+<div class="container">
+<%= form_with model: @task do |f| %>
+  <%= f.label :title, "Task Name" %>
+  <%= f.text_field :title %>
+  <%= f.label :details, "Task Details" %>
+  <%= f.text_field :details %>
+  <%= f.submit "Update Task"%>
+<% end %>
+</div>
